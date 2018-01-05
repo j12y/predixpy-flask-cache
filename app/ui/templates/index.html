@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Predix Cache Demo App</title>
+</head>
+<body>
+    <h1>PredixPy + Predix Cache</h1>
+    <p>This is a quick demonstration for using the Predix Python SDK in
+    combination with the Predix Cache service.</p>
+
+    <p>If you GET the endpoint <i>/api/1.0/cache/$key</i> for any valid url $key
+    it will return the value stored for that key.  If you want to replace or
+    add data, you POST to the same endpoint.</p>
+
+    <p>You can also use this form.</p>
+
+    <form action="/">
+    <p><b>Key</b>:</p> 
+        <p><input type="text" name="key" value="{{ key }}"><input type="submit" value="GET"></p>
+
+    <p><i>{{ msg }}</i></p>
+
+    <p><b>New Value</b>:</p>
+    <p>
+    <textarea name="value">{{ value }}</textarea><br/>
+    <input type="submit" value="SET">
+    </p>
+    </form>
+
+</body>
+</html>

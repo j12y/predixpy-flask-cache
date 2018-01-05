@@ -1,0 +1,6 @@
+---
+applications:
+- name: predixpy-flask-cache-demo
+  memory: 512M
+services:
+- predixpy-flask-cache
