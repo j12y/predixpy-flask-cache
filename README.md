@@ -14,34 +14,34 @@ This is a simple demo of using Cloud Foundry, Flask, and Predix Cache.
 
 **(1) Get the source code.**
 
-``
+```
 git clone https://github.com/j12y/predixpy-flask-cache.git
 cd predixpy-flask-cache
-``
+```
 
 **(2) Initialize the service.**
 
 If you don't already have it, install the Predix Python SDK into your
 environment.
 
-``
+```
 pip install predix
-``
+```
 
 Then inspect and run the following script which will provision the service for
-you.  It is effectively just running a `cf create-service` for you.
+you.  It is the same effect as running `cf create-service predix-cache`.
 
-``
+```
 python create_cache.py
-``
+```
 
 **(3) Push the app.**
 
 You'll want to change the application name to something unique just for you
 
-``
+```
 cf push --random-route
-``
+```
 
 # Results
 
